@@ -1,0 +1,35 @@
+/************************************
+** メニュースタイルの調整
+************************************/
+#navi ul{
+  background-color: transparent;
+}
+
+#navi ul li a{
+  background-color: transparent;
+  color: #333;
+  border: none;
+}
+
+#navi ul li a:hover{
+  background-color: transparent;
+}
+
+#navi ul.sub-menu, #navi ul.children{
+  background-color: transparent;
+}
+
+
+/************************************
+** スライトメニューの閉じるボタン
+************************************/
+.slide-close a{
+  color: #333;
+}
+
+/************************************
+** 入力フォーム
+************************************/
+#cse-search-box input[type="text"]{
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+}

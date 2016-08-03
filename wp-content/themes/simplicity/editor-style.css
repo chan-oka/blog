@@ -1,0 +1,8 @@
+body.mceContentBody {
+  font: 16px 'Lucida Grande','Hiragino Kaku Gothic ProN',
+      Meiryo, sans-serif;
+}
+.editor-area a {
+  color: #339933;
+  text-decoration: underline;
+}

@@ -1,0 +1,558 @@
+/*SNSに関するスタイルシートの設定*/
+
+/************************************
+** SNSシェアボタン
+************************************/
+#sns-group{
+  clear: both;
+}
+
+ul.snsb{
+  padding:10px 0;
+  margin-bottom:0;
+  font-family: sans-serif;
+}
+
+.snsb li {
+  float: left;
+  list-style-type: none;
+  margin-right: 7px;
+}
+
+ul.snsbs li{
+  margin-right:5px;
+  margin-bottom:5px;
+}
+
+ul.snsbs li a{
+  color:#fff;
+  text-decoration:none;
+  font-size:25px;
+  background-color:#000;
+  display:block;
+  padding:7px 6px 3px 6px;
+  border-radius:5px;
+  width:25px;
+  height:30px;
+  position:relative;
+}
+
+ul.snsbs li a .social-count{
+  font-size:10px;
+  position:relative;
+  background-color:#555;
+  width:auto;
+  padding:1px 3px;
+  border-radius:5px;
+  position:absolute;
+  display:inline-block;
+  right:0;
+  bottom:0;
+  height:12px;
+  line-height:12px;
+  font-family: Arial;
+}
+
+ul.snsbs a.twitter-btn-icon-link{background-color:#55acee;}
+ul.snsbs a.facebook-btn-icon-link{background-color:#3b5998;}
+ul.snsbs a.google-plus-btn-icon-link{background-color:#dd4b39;}
+ul.snsbs a.hatena-btn-icon-link{background-color:#3C7DD1;}
+ul.snsbs a.pocket-btn-icon-link{background-color:#EE4257;}
+ul.snsbs a.line-btn-icon-link{background-color:#00c300;}
+ul.snsbs a.evernote-btn-icon-link{background-color:#51b125;}
+ul.snsbs a.feedly-btn-icon-link{background-color:#87bd33;}
+ul.snsbs a.comments-btn-icon-link{
+  background-color:#555;
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+
+
+.snsbs li a:hover{
+  opacity: 0.6;
+}
+
+.snsbs li img {
+  border-radius:10px;
+}
+
+img.evernote-btn-img{
+  min-height:62px;
+}
+
+img.evernote-btn-img-mini{
+  display:none;
+}
+
+/************************************
+** タイトル下SNSボタン
+************************************/
+#sns-group-top ul{
+  padding:0;
+  line-height:20px;
+}
+
+#sns-group-top ul li{
+
+}
+
+#sns-group-top .sns-share-msg{
+  display:none;
+}
+
+#sns-group-top .twitter-btn{
+  width:100px;
+}
+
+#sns-group-top .facebook-btn{
+  width:110px;
+}
+
+#sns-group-top .google-plus-btn{
+  width:70px;
+  margin-top:-2px;
+}
+
+#sns-group-top .pocket-btn{
+  width:95px;
+}
+
+#sns-group-top .evernote-btn-img{
+  display:none;
+}
+
+#sns-group-top .evernote-btn-img-mini{
+  display:block;
+}
+
+#sns-group-top .evernote-btn-img-mini{
+  height:20px !important;
+  width:auto !important;
+}
+
+/*
+#header-in #h-l{
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}*/
+
+/************************************
+** SNSページフォロー
+************************************/
+.sns-follow-msg{
+  margin: 8px 0 0 0;
+  font-size:medium;
+}
+
+.sns-share-msg{
+  margin-bottom:-20px;
+  font-size:medium;
+}
+
+#header .sns-follow-msg{
+  display:none;
+}
+
+ul.snsp{
+  list-style:none;
+  padding-left:0;
+  margin:10px 0 15px;
+}
+
+ul.snsp li{
+  display:inline;
+  margin-right:5px;
+}
+
+ul.snsp li a{
+  color:#666;
+  font-size:19px;
+  line-height:170%;
+  text-decoration:none;
+}
+
+/*アイコフォントの大きさ*/
+ul.snsp li a i{
+  font-size:40px;
+}
+/*feedly、LINEアイコンは自作なので少し大きかったので調整*/
+ul.snsp li a i.icon-feedly-square,
+ul.snsp li a i.icon-line-square,
+ul.snsp li a i.icon-hatebu-square{
+  /* 画像をBase64にするためコメントアウト
+  background-image: url("../images/white-feedly.png"); */
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcAQMAAABIw03XAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAB9JREFUCNdjkP//v4Gh/v//BxDi////H+hGIOwFOwMAuf5pDfN+XdkAAAAASUVORK5CYII=");
+  font-size:33.5px;
+  position: relative;
+  top: 1px;
+}
+
+ul.snsp li.twitter-page a:hover{
+  color:#55acee;
+}
+
+ul.snsp li.facebook-page a:hover{
+  color:#3b5998;
+}
+
+/*Facebookコメント欄が表示されない不具合修正*/
+.fb-like iframe {
+    max-width: none;
+}
+
+ul.snsp li.google-plus-page a:hover{
+  color:#dd4b39;
+}
+
+ul.snsp li.instagram-page a:hover{
+  color:#ab7f66;
+}
+
+ul.snsp li.hatebu-page a:hover{
+  color:#008fde;
+}
+
+ul.snsp li.pinterest-page a:hover{
+  color:#cc2127;
+}
+
+ul.snsp li.youtube-page a:hover{
+  color:#e52d27;
+}
+
+ul.snsp li.feedly-page a:hover{
+  color:#87bd33;
+}
+
+ul.snsp li.line-page a:hover{
+  color:#00c300;
+}
+
+ul.snsp li.rss-page a:hover{
+  color:#fe9900;
+}
+
+
+ul.snsp li.feedly-page a img{
+  margin-bottom:-3px;
+  width:32.5px;
+  height:32.5px;
+  border-radius:7px;
+  border-width:0px;
+}
+
+ul.snsp li a i{
+  /* 画像をBase64にするためコメントアウト
+  background-image: url("../images/white.png"); */
+  background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfAQMAAADKou9EAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAB9JREFUCNdjkP///wFD/f//PyDE/////wwUgXAG2FUADfF3INqLhU0AAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position:3px 5px;
+  padding:0;
+  z-index: 10;
+}
+
+ul.snsp li a span{
+  width:33px;
+  height:33px;
+  background-color:#FFF;
+  display:block;
+  border-radius:5px;
+  z-index: 1;
+}
+
+/************************************
+** シェアバー
+************************************/
+#sharebar {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #CCCCCC;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+  margin-left:-110px;
+  margin-top:-50px;
+  width:90px;
+  position: fixed;
+}
+
+#sharebar ul li{
+  display: block;
+  margin: 5px;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  float:none;
+  padding:0;
+}
+
+#sharebar ul.snsb-balloon li,
+#sharebar li.comments-balloon-btn{
+  margin-left:15px;
+  margin-bottom:10px;
+}
+
+#sharebar .sns-share-msg{
+  display:none;
+}
+
+/************************************
+** 自作のバルーンシェアボタン
+************************************/
+.balloon-btn-set{
+  display:block;
+  width:60px;
+  height:63px;
+}
+
+.balloon-btn-set a{
+  display:block;
+  color:#777;
+  font-size:14px;
+  text-decoration:none;
+
+}
+
+a.arrow-box-link{
+  font-weight:bold;
+  text-align:center;
+  font-family: Arial;
+  display:block;
+  font-size: 14px;
+}
+
+a.evernote-arrow-box-link{
+  font-family: 'Boogaloo', cursive;
+  font-weight:normal;
+}
+
+a.arrow-box-link:hover{color:#555;}
+
+a.balloon-btn-link{
+  border:1px solid #ddd;
+  width:58px;
+  height:20px;
+  line-height:22px;
+  position:relative;
+  top:4px;
+  color:white;
+  border-radius:3px;
+  text-align:center;
+  display:block;
+}
+
+a.balloon-btn-link:hover{
+  color:white;
+  opacity:0.6;
+}
+
+/*a.balloon-btn-link i{
+  position:relative;
+  top:3px
+}*/
+
+a.twitter-balloon-btn-link{background-color:#55acee;}
+a.facebook-balloon-btn-link{background-color:#3c5a99;}
+a.googleplus-balloon-btn-link{background-color:#dd4b39;}
+a.hatena-balloon-btn-link{background-color:#3c7dd1;}
+a.pocket-balloon-btn-link{background-color:#ee4257;}
+a.line-balloon-btn-link{background-color:#00c300;}
+a.evernote-balloon-btn-link{background-color:#51b125;}
+a.feedly-balloon-btn-link{background-color:#87bd33;}
+a.comments-balloon-btn-link{background-color:#333;}
+
+a.comments-balloon-btn-link .fa-comment{position: relative;top:-3px;}
+
+.arrow-box {
+  position: relative;
+  background: #fff;
+  border: 1px solid #bbb;
+  text-align:center;
+  width:58px;
+  height:33px;
+  border-radius:3px;
+  line-height:33px;
+  display:inline-block;
+}
+
+.arrow-box:after,
+.arrow-box:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow-box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #fff;
+  border-width: 3px;
+  margin-left: -3px;
+}
+.arrow-box:before {
+  border-color: rgba(187, 187, 187, 0);
+  border-top-color: #ddd;
+  border-width: 5px;
+  margin-left: -5px;
+}
+
+/************************************
+** タイトル下SNSボタン
+************************************/
+#sns-group-top .balloon-btn-set{
+  display:block;
+  width:87px;
+  height:22px;
+  margin-bottom:10px;
+}
+
+#sns-group-top .arrow-box{
+  height:20px;
+  width:50px;
+  line-height:20px;
+  float:right;
+}
+
+#sns-group-top .arrow-box-link{
+  line-height:20px;
+  text-align:center;
+}
+
+#sns-group-top .balloon-btn-link{
+  top:0;
+  width:28px;
+  float:left;
+  line-height:24px;
+}
+
+
+
+#sns-group-top .arrow-box {
+  position: relative;
+  background: #fff;
+  border: 1px solid #bbb;
+}
+#sns-group-top .arrow-box:after,
+#sns-group-top .arrow-box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  left:auto;
+  position: absolute;
+  pointer-events: none;
+}
+#sns-group-top .arrow-box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 3px;
+  margin-top: -3px;
+}
+#sns-group-top .arrow-box:before {
+  border-color: rgba(119, 119, 119, 0);
+  border-right-color: #bbb;
+  border-width: 4px;
+  margin-top: -4px;
+}
+
+/************************************
+** Google FontsのBoogalooをダウンロードしたものの呼び出し
+************************************/
+@font-face {
+   font-family: Boogaloo;
+   src: url('../webfonts/boogaloo/Boogaloo-Regular.ttf') format("truetype");
+}
+
+/************************************
+** 調整
+************************************/
+/*Font Awesomeアイコンをたての中央に据える*/
+/*[class^="icon-"], [class*=" icon-"] {
+  top:50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}*/
+
+/************************************
+** バイラルボタン
+************************************/
+.sns-group-viral ul.snsb li a{
+  width: 150px;
+  height: 35px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.sns-group-viral ul.snsbs li a .social-count{
+  font-size: 12px;
+  bottom: 2px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.sns-group-viral .social-icon:after{
+  margin-left: 7px;
+  position: relative;
+  top: -2px;
+  font-family: arial;
+}
+
+.sns-group-viral .fa-comment:after{
+  top: 0;
+}
+
+
+.sns-group-viral .icon-twitter:after{
+  content: 'Twitter';
+}
+
+.sns-group-viral .icon-facebook:after{
+  content: 'Facebook';
+}
+
+.sns-group-viral .icon-googleplus:after{
+  content: 'Google+';
+}
+
+.sns-group-viral .icon-hatena:after{
+  content: 'Hatena';
+}
+
+.sns-group-viral .icon-pocket:after{
+  content: 'Pocket';
+}
+
+.sns-group-viral .icon-evernote:after{
+  content: 'Evernote';
+}
+
+.sns-group-viral .icon-feedly:after{
+  content: 'Feedly';
+}
+
+.sns-group-viral .fa-comment:after{
+  content: 'Comment';
+}
+
+/************************************
+** バイラルボタン（シェアバー）
+************************************/
+#sharebar .sns-group-viral ul.snsb li a{
+  width: 68px;
+}
+
+#sharebar .sns-group-viral .social-icon:after{
+  display: none;
+}
+

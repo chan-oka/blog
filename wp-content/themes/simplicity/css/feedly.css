@@ -1,0 +1,119 @@
+/************************************
+** 購読者数つきFeedlyボタン（縦型）
+************************************/
+#feedly-followers {
+    display: block;
+}
+
+#feedly-followers a{
+  display: block;
+}
+
+#feedly-followers img{
+    width:72px;
+    height:22px !important;
+    border:none;
+}
+
+/* 購読者数の表示部分 */
+#feedly-count {
+  margin:0 auto 6px auto;
+  width: 62px;
+  height: 31px;
+  background-color: #FFF;
+  position: relative;
+  border: 1px solid #BDBDBD;
+  border-radius: 4px;
+  padding: 0 4px;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 31px;
+  text-align: center;
+  display: block;
+  background: white;
+}
+
+#feedly-count a{
+  color:#333;
+  text-decoration:none;
+}
+
+/* 購読者数吹き出し部分 */
+.fdly-count:after,
+.fdly-count:before {
+  border: solid transparent;
+  content: ' ';
+  right: 43%;
+  position: absolute;
+}
+
+.fdly-count:before {
+  border-width: 5px;
+  border-top-color: #B0C1D8;
+  top: 32px;
+}
+
+.fdly-count:after {
+  border-width: 5px;
+  border-top-color: #FFF;
+  top: 30px;
+}
+
+/************************************
+** 購読者数つきFeedlyボタン（横型）
+************************************/
+.feedly-btn-horizontal img#feedly-follow{
+  width:60px;
+  height:20px;
+  border:0;
+  margin-right:3px;
+}
+
+.feedly-btn-horizontal .arrow_box {
+  position: relative;
+  background: #fff;
+  border: 1px solid #BDBDBD;
+  padding: 0 6px;
+  border-radius:3px;
+  top:-7px;
+  line-height:18px;
+  display:inline-block;
+  height:22px;
+}
+
+.feedly-btn-horizontal a{
+  color:#333;
+  font-size:11px;
+  text-decoration:none;
+  line-height:18px;
+}
+
+.feedly-btn-horizontal a:hover{
+  color:#333;
+}
+
+.feedly-btn-horizontal .arrow_box:after,
+.feedly-btn-horizontal .arrow_box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.feedly-btn-horizontal .arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 3px;
+  margin-top: -3px;
+}
+
+.feedly-btn-horizontal .arrow_box:before {
+  border-color: rgba(189, 189, 189, 0);
+  border-right-color: #BDBDBD;
+  border-width: 4px;
+  margin-top: -4px;
+}

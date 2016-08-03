@@ -1,0 +1,110 @@
+/*外部パーツの微調整など*/
+
+/*.bookmarklet.androidhtml > div {
+    margin-left: 0 !important;
+}
+
+.bookmarklet.androidhtml > div img.cover-image {
+    margin-left: 0 !important;
+}*/
+
+/*SimplicityでbbPressのスタイルを整える*/
+.bbp-breadcrumb-home,
+.bbp-breadcrumb-home+.bbp-breadcrumb-sep,
+.topic .post-date,
+.topic .post-update,
+.topic .footer-post-meta,
+.post-0 .post-date,
+.post-0 .post-update,
+.post-0 .footer-post-meta,
+.forum .post-date,
+.forum .post-update,
+.forum .footer-post-meta{
+	display: none;
+}
+
+#bbp_search{
+	font-size: 17px;
+}
+
+#bbp_search_submit{
+  padding-top:9px;
+  padding-bottom:9px;
+}
+
+.post-0 .post-meta{
+	height: 27px;
+}
+
+.bbp-reply-content{
+	font-size: 16px;
+	line-height: 170%;
+}
+
+.bbp-forum-title{
+	font-size: 16px !important;
+}
+
+.bbp-topic-permalink{
+	font-size: 14px !important;
+}
+
+#bbpress-forums .status-closed,
+#bbpress-forums .status-closed a {
+    color: #555 !important;
+}
+
+#bbp-container .entry-content{
+  margin-left:0;
+}
+
+.bbp-form > p,
+.bbp-form > div{
+  text-align: left;
+}
+
+#bbp_reply_content,
+#bbp_topic_content{
+  border:1px solid #ccc;
+}
+
+/*bbResolutions*/
+.bbr-form-wrapper {
+  clear: left;
+}
+
+.bbr-field-wrapper {
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.bbr-resolution-sticker{
+
+}
+@media screen and (max-width: 440px){
+  #bbpress-forums div.bbp-forum-content,
+  #bbpress-forums div.bbp-topic-content,
+  #bbpress-forums div.bbp-reply-content{
+    margin-left: 10px !important;
+  }
+}
+
+/*Googleカスタム検索用*/
+#cse-search-box input[type="text"]{
+  width: calc(100% - 70px);
+  background-color: #fff;
+}
+
+#cse-search-box input[type="submit"]{
+  height: 32px;
+}
+
+#cse-search-box input {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 34px;
+}
